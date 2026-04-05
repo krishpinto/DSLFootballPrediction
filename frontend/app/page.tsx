@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 
-const API = "http://localhost:8000";
+const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 const TOURNAMENTS = [
   "Friendly",
